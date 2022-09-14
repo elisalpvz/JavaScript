@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="calc.css" rel="stylesheet" />
+<script src="catculator.js"></script>
+</head>
+
+<body>
+
+<table border = 1>
+	<tr>
+    	<td colspan = 4> <div id = 'ans'> 123456</div></td>
+    </tr>
+    <tr>
+    	<td> <button id="btnc" onclick="javascript:btnClear();"> C </button> </td>
+      <td> <button id="btns" onclick="javascript:plusMinus();"> +/- </button> </td>
+    	<td> <button id="btnp" onclick="javascript:percent();"> %  </button> </td>
+      <td> <button id="btnd" onclick="javascript:setOp('/');"> / </button> </td>  
+    </tr>
+    <tr>
+    	<td> <button id="btn7" onclick="javascript:setNum(7);"> 7 </button> </td>
+    	<td> <button id="btn8" onclick="javascript:setNum(8);"> 8 </button> </td>
+    	<td> <button id="btn9" onclick="javascript:setNum(9);"> 9 </button> </td>
+      <td> <button id="btnm" onclick="javascript:setOp('x');"> x </button> </td>  
+    </tr> 
+      <tr>
+    	<td> <button id="btn4" onclick="javascript:setNum(4);"> 4 </button> </td>
+    	<td> <button id="btn5" onclick="javascript:setNum(5);"> 5 </button> </td>
+    	<td> <button id="btn6" onclick="javascript:setNum(6);"> 6 </button> </td>
+      <td> <button id="btnz" onclick="javascript:setOp('-');"> - </button> </td>  
+    </tr> 
+      <tr>
+    	<td> <button id="btn1" onclick="javascript:setNum(1);"> 1 </button> </td>
+    	<td> <button id="btn2" onclick="javascript:setNum(2);"> 2 </button> </td>
+    	<td> <button id="btn3" onclick="javascript:setNum(3);"> 3 </button> </td>
+      <td> <button id="btna" onclick="javascript:setOp('+');"> + </button> </td>  
+    </tr> 
+
+    <tr>
+    	<td colspan=2> <button id="btn0"> 0 </button>  </td>
+    	<td> <button id="btnt" onclick="javascript:dot();">  .  </button></td>
+        <td> <button id="btnop" onclick="javascript:calculate();"> =  </button> </td>  
+    </tr>  
+</table>
+        
+	    
+</body>
+</html>
